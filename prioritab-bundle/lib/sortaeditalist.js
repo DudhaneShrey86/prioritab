@@ -117,6 +117,7 @@ $(function () {
     chrome.storage.sync.set({
       'todo-dones': dones
     });
+    CalculatePercentages();
   });
 
   // Add todo
@@ -202,8 +203,10 @@ $(function () {
   // Clear all
   $clearAll.click(function (e) {
     e.preventDefault();
-    var listToImpact = e.originalEvent.srcElement.getAttribute('data-list');
-    $.publish('/clear-all/', [listToImpact, true]);
+    if (confirm('Are you sure you want to clear all tasks?')) {
+      var listToImpact = e.originalEvent.srcElement.getAttribute('data-list');
+      $.publish('/clear-all/', [listToImpact, true]);
+    }
   });
 
   // Fade In and Fade Out the Remove link on hover
@@ -453,6 +456,7 @@ $(function () {
     chrome.storage.sync.set({
       'todo-orders': order.join(',')
     });
+    CalculatePercentages();
   });
 
   $.subscribe('/clear-all/', function (listToImpactName, clearAll) {

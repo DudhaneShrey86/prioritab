@@ -102,7 +102,7 @@ body {
   margin-top: 1rem;
 }
 
-#countdownbox {
+#countdownbox, #completionbox {
   font-size: 1em;
   margin: .5rem;
   width: 63%;
@@ -114,7 +114,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-#countdownbox-justifier {
+#countdownbox-justifier, #completionbox-justifier {
   width: 100%;
   clear: both;
   margin-left: auto;
@@ -122,7 +122,7 @@ body {
   text-align: justify;
 }
 
-#countdownbox-justifier:after {
+#countdownbox-justifier:after, #completionbox-justifier:after {
   content: "";
   width: 100%;
   display: inline-block;
@@ -294,6 +294,7 @@ input[type="text"]:focus {
   left: 0;
   bottom: 0;
   margin: 1rem;
+  z-index: 1;
 }
 
 #customize-button {
@@ -361,6 +362,22 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
+/* TOGGLE CORNER */
+#toggle-corner {
+  position: fixed;
+  left: 60px;
+  bottom: 0;
+  font-size: medium;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 0;
+  animation: fadeIn 1s both;
+}
+#completion-toggle-icon {
+  padding: 4px;
+  vertical-align: middle;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -375,7 +392,7 @@ input[type="text"]:focus {
     flex-wrap: wrap;
     margin-top: 5%;
   }
-  #countdownbox {
+  #countdownbox, #completionbox {
     width: 100%;
   }
   .countdown-amount {
