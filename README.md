@@ -3,6 +3,13 @@ A new tab page that emphasizes setting priorities.
 
 Set your priorities for the day, week and month, and be reminded about them every time you open a new tab!
 
+## Differences from Original Repository
+"Clear All" option now asks for user confirmation before clearing all priorities.
+
+"Show Completion Percentage" toggle has been added, showing completion percentages of the segregated priorities.
+
+#### Link to original repo: <a href="https://github.com/ajyang818/prioritab">https://github.com/ajyang818/prioritab</a>
+
 ## FAQ
 ### How do I edit a task?
 Step 1: Double click on the text of the task you want to edit
@@ -30,11 +37,3 @@ Step 3:	A list of all extensions will appear. Find the Prioritab card. To enable
 Step 1: Click on Customization (cogs) in the bottom left corner
 
 Step 2: Click on the "Uninstall Prioritab" button
-
-
-## Differences from Original Repository
-"Clear All" option now asks for user confirmation before clearing all priorities.
-
-"Show Completion Percentage" toggle has been added, showing completion percentages of the segregated priorities.
-
-#### Link to original repo: <a href="https://github.com/ajyang818/prioritab">https://github.com/ajyang818/prioritab</a>
